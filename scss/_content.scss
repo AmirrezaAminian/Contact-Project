@@ -1,0 +1,41 @@
+.content {
+    display: flex;
+
+
+    &__sidebar {
+
+        flex: 0 0 15%;
+
+        button {
+            display: flex;
+            align-items: center;
+            margin-left: 4px;
+            margin-top: 2rem;
+            background: none;
+            border: none;
+            outline: none;
+            box-shadow: 0.1rem 0.1rem 10rem rgba(#000, 0.2);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            cursor: pointer;
+
+
+
+            span {
+                font-size: 17px;
+                margin-left: 1rem;
+                color: #3c4043;
+                font-weight: 500;
+                font-family: $font-contact;
+                padding-right: 1rem;
+                font-family: Google Sans, Roboto, Arial, sans-serif;
+            }
+        }
+    }
+
+    &__main {
+    
+        flex: 1;
+        min-height: 100%;
+    }
+}

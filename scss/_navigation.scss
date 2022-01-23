@@ -12,13 +12,13 @@
     }
 
     &__contact {
-        margin-left: 30px;
+        margin-left: 10px;
         padding: 15px 0;
         display: flex;
         align-items: center;
 
         img {
-            width: 45px;
+            width: 40px;
         }
 
         i {
@@ -38,7 +38,8 @@
             margin-left: 8px;
             color: #5f6368;
             font-family: sans-serif;
-            font-size: 25px;
+            font-size: 23px;
+            font-weight: 500;
 
 
         }
@@ -46,7 +47,7 @@
 
     &__search {
         margin-right: auto;
-        margin-left: 7rem;
+        margin-left: 5rem;
         position: relative;
         width: 65rem;
         align-items: center;
@@ -177,13 +178,13 @@
         }
 
         &--que i:hover+figure {
-            transform: translateY(20px);
+            transform: translateY(10px);
             opacity: 1;
             visibility: visible;
         }
 
         &--setting i:hover+figure {
-            transform: translateY(20px);
+            transform: translateY(10px);
             opacity: 1;
             visibility: visible;
         }
@@ -215,7 +216,34 @@
             justify-content: center;
             align-items: center;
             font-weight: 500;
+            cursor: pointer;
 
         }
     }
+
+    &__apps{
+
+        &--content{
+            position: absolute;
+            top: 5rem;
+            color: #fff;
+            background-color: #5f6368;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            padding: 3px 5px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.4s 0.5s;
+        }
+
+
+        &:hover +&--content{
+            top: 6.6rem;
+            opacity: 1;
+            visibility: visible;            
+        }
+    }
+
+     
 }

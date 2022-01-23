@@ -42,14 +42,14 @@ body {
 }
 
 .navigation__contact {
-  margin-left: 30px;
+  margin-left: 10px;
   padding: 15px 0;
   display: flex;
   align-items: center;
 }
 
 .navigation__contact img {
-  width: 45px;
+  width: 40px;
 }
 
 .navigation__contact i {
@@ -69,12 +69,13 @@ body {
   margin-left: 8px;
   color: #5f6368;
   font-family: sans-serif;
-  font-size: 25px;
+  font-size: 23px;
+  font-weight: 500;
 }
 
 .navigation__search {
   margin-right: auto;
-  margin-left: 7rem;
+  margin-left: 5rem;
   position: relative;
   width: 65rem;
   align-items: center;
@@ -195,13 +196,13 @@ body {
 }
 
 .navigation__icons--que i:hover + figure {
-  transform: translateY(20px);
+  transform: translateY(10px);
   opacity: 1;
   visibility: visible;
 }
 
 .navigation__icons--setting i:hover + figure {
-  transform: translateY(20px);
+  transform: translateY(10px);
   opacity: 1;
   visibility: visible;
 }
@@ -244,9 +245,67 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.navigation__apps--content {
+  position: absolute;
+  top: 5rem;
+  color: #fff;
+  background-color: #5f6368;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 3px 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s 0.5s;
+}
+
+.navigation__apps:hover + .navigation__apps--content {
+  top: 6.6rem;
+  opacity: 1;
+  visibility: visible;
 }
 
 .sidebar {
   display: flex;
+}
+
+.content {
+  display: flex;
+}
+
+.content__sidebar {
+  flex: 0 0 15%;
+}
+
+.content__sidebar button {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: 0.1rem 0.1rem 10rem rgba(0, 0, 0, 0.2);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.content__sidebar button span {
+  font-size: 17px;
+  margin-left: 1rem;
+  color: #3c4043;
+  font-weight: 500;
+  font-family: "PT Sans", sans-serif;
+  padding-right: 1rem;
+  font-family: Google Sans, Roboto, Arial, sans-serif;
+}
+
+.content__main {
+  flex: 1;
+  min-height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
